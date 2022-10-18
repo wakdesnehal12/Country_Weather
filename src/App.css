@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.nameBox{
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 21px #00000085;
+  padding: 25px;
+}
+.nameBox input{
+  width: 300px;
+}
+.nameBox button{
+  display: block;
+  margin: 15px auto 0;
+}
+.countryBox{
+  float: left;
+  width: 48%;
+  margin: 0 10px;
+  padding: 30px 0;
+}
+.App .countryBox img{
+  width: 100px;
+  height: 60px;
+  margin-right: 15px;
+  position: relative;
+  top: 18px;
+}
+.countryBox .countrname{
+  padding: 0;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.countrname, .countrName img{
+  display: inline-block;
+}
+.countryBox .capitalName, .countryBox .countrypop, .countryBox .countrylang{
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  padding: 5px 25px;
+}
+.countryBox button{
+  display: block;
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 15px;
+  background: #0080009c;
+  color: white;
+  border-color: transparent;
+}
+.countryBox button:hover{
+  color: #0080009c;
+  border-color: #0080009c;
+}
+.weatherBox p{
+  font-size: 24px;
+  font-weight: 600;
+}
