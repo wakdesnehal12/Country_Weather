@@ -41,7 +41,7 @@ const FetchCountry = () => {
                             <CardContent className="capitalName" data-testId="capital"> Capital:- {item.capital}</CardContent>
                             <CardContent className="countrypop"> Population:- {item.population}</CardContent>
                             <CardContent className="countrylang"> Country Lat Lang:- {item.latlng}</CardContent>
-                            <Button data-testid={`button-${_id}`} variant='outlined' onClick={handleSubmit}>Capital Weather</Button>
+                            <Button data-testid={`button-${_id}`} variant='outlined' onClick={handleSubmit} >Capital Weather</Button>
                         </Card>
                     )
                 })

@@ -1,6 +1,6 @@
 import { fireEvent, getByLabelText, render, renderHook, screen } from '@testing-library/react';
-import CountryForm from './CountryForm';
-import { UserData } from './UserData';
+import CountryForm from '../CountryForm';
+import { UserData } from '../UserData';
 
 const mockedUsedNavigate = jest.fn();
 

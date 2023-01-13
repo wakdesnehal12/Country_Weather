@@ -1,6 +1,6 @@
 import { render, screen, fireEvent, within } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
-import FetchCountry from './FetchCountry';
+import FetchCountry from '../FetchCountry';
 
 const mockedUsedNavigate = jest.fn();
 
@@ -40,9 +40,9 @@ describe("FetchCountry", () => {
         await act(async () => { await render(<FetchCountry/>)})
         expect(screen).toMatchSnapshot();
     });
-    test('should fetch a list of', async () => {
-        const fetchSpy = jest.spyOn(global, 'fetch');
-        await act(async () => {render(<FetchCountry/>)})
-        expect(fetchSpy).toBeCalled();
+    test('should be navigate',  () => {
+        render(<FetchCountry/>)
+        fireEvent.click(screen.getByTestId('button-1'))
+        expect(mockedUsedNavigate).toBeCalledWith('/countryweather');
     });
 });
